@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./component/Header/Header";
+import Range from "./component/Range/Range";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Range heading="Monthly investment" min={500} max={100000} symbol="₹" />
+      <Range heading="Expected return rate" min={0} max={30} symbol="%" />
+      <Range heading="Time Period" min={0} max={10} symbol="Yr" />
     </div>
   );
 }

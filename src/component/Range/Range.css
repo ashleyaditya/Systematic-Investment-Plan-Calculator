@@ -1,0 +1,19 @@
+.slider {
+  width: 300px;
+  margin: 30px;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
